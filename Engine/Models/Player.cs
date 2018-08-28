@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Engine.Models {
-	class Player {
+	public class Player {
 		public string Name { get; set; }
 		public string CharacterClass { get; set; }
 		public int HitPoints { get; set; }
