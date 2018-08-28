@@ -5,14 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Engine.Models;
 
-namespace CWPF_RPG.ViewModels {
-	class GameSession {
-		Player CurrentPlayer { get; set; }
+namespace Engine.ViewModels {
+	public class GameSession {
+		public Player CurrentPlayer { get; set; }
 
 		public GameSession() {
 			CurrentPlayer = new Player {
 				Name = "Scott",
-				Gold = 100000
+				CharacterClass = "Fighter",
+				HitPoints = 10,
+				Gold = 100000,
+				ExperiencePoints = 0,
+				Level = 1
 			};
 		}
 	}

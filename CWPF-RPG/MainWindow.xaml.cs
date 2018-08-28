@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Engine.ViewModels;
 
 namespace CWPF_RPG
 {
@@ -20,9 +21,14 @@ namespace CWPF_RPG
     /// </summary>
     public partial class MainWindow : Window
     {
+		private GameSession _GameSession;
         public MainWindow()
         {
             InitializeComponent();
+
+			_GameSession = new GameSession();
+
+			DataContext = _GameSession;
         }
     }
 }
