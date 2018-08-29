@@ -99,5 +99,32 @@
       <Name>Engine</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\FarmFields.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\Farmhouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\HerbalistsGarden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\HerbalistsHut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\SpiderForest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\TownGate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\TownSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\Trader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Locations\Home.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
