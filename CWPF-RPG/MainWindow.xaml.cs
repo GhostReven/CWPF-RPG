@@ -21,14 +21,19 @@ namespace CWPF_RPG
     /// </summary>
     public partial class MainWindow : Window
     {
-		private GameSession _GameSession;
+		private GameSession _gameSession;
+
         public MainWindow()
         {
             InitializeComponent();
 
-			_GameSession = new GameSession();
+			_gameSession = new GameSession();
 
-			DataContext = _GameSession;
+			DataContext = _gameSession;
+        }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e) {
+            _gameSession.CurrentPlayer.ExperiencePoints += 10;
         }
     }
 }

@@ -27,7 +27,8 @@
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="Auto"/>
 				<RowDefinition Height="Auto"/>
-			</Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="Auto"/>
@@ -46,7 +47,8 @@
 			<Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
 			<Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
 			<Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
-		</Grid>
+            <Button Grid.Row="6" Grid.Column="0" Content="Add XP" Click="ButtonBase_OnClick"/>
+        </Grid>
 		
 		<Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"/>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="BurlyWood"/>
